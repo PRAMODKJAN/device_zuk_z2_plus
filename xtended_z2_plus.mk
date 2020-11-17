@@ -30,6 +30,9 @@ XTENDED_BUILD_TYPE := OFFICIAL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xtended.maintainer=Pranav_Temkar
 
+# Inherit Pixel apn
+$(call inherit-product, vendor/xtended/telephony/telephony.mk)
+
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
